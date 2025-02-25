@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\UserDashboard;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -33,4 +34,9 @@ Route::prefix('articles')->name('articles.')->group(function () {
     Volt::route('/{id}/edit', 'pages.articles.edit')->name('edit');
     Volt::route('/{id}/details', 'pages.articles.show')->name('show');
 });
+
+// Route::middleware(['auth', 'role:admin'])->group(function () {
+//    Route::get('/dashboard', UserDashboard::class);
+// });
+
 require __DIR__.'/auth.php';

@@ -15,7 +15,8 @@
         "livewire/livewire": "^3.5",
         "livewire/volt": "^1.6",
         "robsontenorio/mary": "^1.41",
-        "spatie/laravel-markdown": "^2.7"
+        "spatie/laravel-markdown": "^2.7",
+        "spatie/laravel-permission": "^6.15"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

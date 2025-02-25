@@ -29,10 +29,13 @@ new class extends Component {
     </div>
     <div class="card bg-base-100 shadow">
         <div class="card-body">
-            <div class="prose-xl md:prose-sm max-w-none w-full">
+            <div class="prose-xl md:prose-sm max-w-none w-full gap-2">
                 <x-markdown>
-                    {{ $article->description }}
+                    {{ $article->title }}
                 </x-markdown>
+                <div>
+                    {!!  $article->description !!}
+                </div>
                 <x-markdown>
                     {{ $article->body }}
                 </x-markdown>
